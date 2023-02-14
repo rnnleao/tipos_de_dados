@@ -1,32 +1,36 @@
+import java.util.Scanner;
+
 public class OperadorCalc {
-    // colete dois números do teclado
-    //faça as 4 operações matemáticas
     public static void main(String[] renan){
         Scanner entrada = new Scanner(System.in);
         int numero1;
         int numero2;
         int soma;
+        int sub;
+        int mult;
+        double div;
+        double res;
+
 
         System.out.println("Digite um número");
         numero1=entrada.nextInt();
 
         System.out.println("Digite um número");
         numero2=entrada.nextInt();
+
         soma=numero1+numero2;
         System.out.println("A soma dos dois números são " +soma);
-    }
 
-    Scanner entrada = new Scanner(System.in);
-        int numero1;
-        int numero2;
-        int subtracao;
+        sub=numero1-numero2;
+        System.out.println("A subtração dos dois números são " +sub);
 
-        System.out.println("Digite um número");
-        numero1=entrada.nextInt();
+        mult=numero1*numero2;
+        System.out.println("A multiplicação dos dois números são " +mult);
 
-        System.out.println("Digite um número");
-        numero2=entrada.nextInt();
-        soma=numero1+numero2;
-        System.out.println("A soma dos dois números são " +subtracao);
+        div=numero1/numero2;
+        System.out.println("A divisão dos dois números são " +div);
+
+        res=numero1%numero2;
+        System.out.println("O resto dos dois números são " +res);
     }
 }
