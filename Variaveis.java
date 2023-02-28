@@ -3,6 +3,8 @@ public class Variaveis {
 
     
     int idade=17;
+    String nome;
+    
     char letra='M';
     boolean vivo=false;
     byte quantidadeBola=7;
